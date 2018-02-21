@@ -32,13 +32,20 @@ p {
   margin-bottom: 30px;
 }
 
-h1, h2, h3, h4, h5, h6, figure {
+h1, h2, h4, h5, h6, figure {
   color: #000;
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
-
+h3{
+  font-family: "Helvetica", sans-serif;
+  font-style: oblique;
+  color:#263FFF;
+  font-weight:550;
+    margin: 0 0 40px 0;
+    font-size:22px;
+}
 ::-webkit-selection {
   color: #fff;
   background: #ECAD77;
@@ -76,21 +83,21 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #ECAD00;
+  background: #263FFF;
   color: #fff;
-  border: 2px solid #ECAD00;
+  border: 2px solid #263FFF;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background:  #ECAD77 !important;
-  border-color: #ECAD77 !important;
+  background:  #15259b !important;
+  border-color: #15259b !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #ECAD00;
-  border: 2px solid #ECAD00;
+  color: #263FFF;
+  border: 2px solid #263FFF;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #ECAD77;
+  background: #263FFF;
   color: #fff;
 }
 
@@ -208,7 +215,20 @@ h1, h2, h3, h4, h5, h6, figure {
   visibility: visible;
   opacity: 1;
 }
+.blue {
 
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid #263FFF;
+  height: 30px;
+  font-size: 15px;
+  text-align:justify;
+
+}
+.blue h5{
+  color:white;
+  padding:25px;
+}
 .form-control {
   box-shadow: none;
   background: transparent;
@@ -449,10 +469,13 @@ body::-webkit-scrollbar-thumb {
   color: #FF1C25;
 }
 
-#fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus, #fh5co-header nav ul li a:visited {
+#fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
   outline: none;
   text-decoration: none;
-  color:#FF1C25
+  color:#FF1C25;
+}
+.current a{
+  color:#FF1C25 !important;
 }
 #fh5co-header nav ul li.cta {
   margin-left: 20px;
@@ -534,7 +557,8 @@ body::-webkit-scrollbar-thumb {
 #fh5co-hero .flexslider .slider-text {
   display: table;
   opacity: 0;
-  min-height: 700px;
+  min-height: 100px;
+  margin-top:13%;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
@@ -582,6 +606,7 @@ body::-webkit-scrollbar-thumb {
 }
 #fh5co-why-us .item-block h3, .fh5co-services .item-block h3 {
   font-size: 20px;
+
 }
 #fh5co-why-us .item-block p:last-child, .fh5co-services .item-block p:last-child {
   margin-bottom: 0;
